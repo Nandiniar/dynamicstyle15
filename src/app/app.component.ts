@@ -8,5 +8,13 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'dynamicstyle15';
+  color="red"
+ fontSize="80px"
+ headingSizeBig="80px"
+ headingSizeSmall="30px"
+ zoom=true
+ updateHeadingSize(){
+  this.zoom=!this.zoom
+ }
 }
+

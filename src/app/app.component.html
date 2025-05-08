@@ -1,0 +1,11 @@
+<h1 style="background-color:red">Static Style</h1>
+<!--this is static file-->
+
+<!--for dynamic file-->
+<h1 [style.backgroundColor]="color" [style.fontSize]="fontSize">Dynamic Style</h1>
+<!-- agar hume pixel yaha html me likhna ho toh [style.fontSize.px] for percentage we use pt-->
+
+<h1 [style.fontSize]="headingSizeBig">Heading</h1>
+<button (click)="updateHeadingSize()">Change Size</button>
+<h1 [style.fontSize]="zoom? headingSizeBig:headingSizeSmall">Heading1</h1>
+
